@@ -40,31 +40,3 @@ def play(word, lives):
     blanks = list(blanks)
     guessed = []
     incorrect = 7
-    while incorrect > 0:
-        print("\n" + gallows[incorrect]
-              + "\nYou have {} chances left.".format(incorrect)
-              + "\nYour word: " + "".join(blanks)
-              + "\nGuessed letters: " + ", ".join(guessed)
-             )
-        letter = input("Your guess: ").lower()
-        if len(letter) == 1 and letter.isalpha():
-            if letter in guessed:
-                print("\n\nYou already guessed that!")
-            elif letter in word:
-                for index,character in enumerate(word):
-                    blanks = list(blanks)
-                    if character == letter:
-                        blanks[index] = letter
-                        current = "".join(blanks)
-                        if blanks == word:
-                            print("\n\nCONGRATULATIONS, YOU WON!!\nYour word was " + ''.join(word) + ".\n")
-                            play_again()
-            elif letter not in word:
-                incorrect -= 1
-                guessed.append(letter)
-        else:
-            print("\n\n!Only single letters allowed!\n\n")
-    else:
-        print(gallows[0])
-        print("\nSorry " + player + ", your game is over!\nYour word was " + ''.join(word) + ".")
-        play_again()
