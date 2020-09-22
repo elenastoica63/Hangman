@@ -42,3 +42,5 @@ word_list2 = [
 "United Arab Emirates",
 "United Kingdom", 
 "United States of America"]
+
+print(word_list2)

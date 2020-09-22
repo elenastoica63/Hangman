@@ -193,8 +193,10 @@ word_list = [
 "Uruguay",
 "Vanuatu",
 "Caracas",
-"Vietnam", 
+"Vietnam",
 "Hanoi",
 "Zambia", 
 "Lusaka",
 "Harare"]
+
+print(word_list)

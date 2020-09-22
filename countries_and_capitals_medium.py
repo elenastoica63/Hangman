@@ -1,4 +1,4 @@
-word_list = [
+word_list1 = [
 "Argentina",
 "Australia",
 "Canberra",
@@ -123,3 +123,5 @@ word_list = [
 "Port Vila",
 "Venezuela",
 "Zimbabwe",]
+
+print(word_list1)
