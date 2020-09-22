@@ -40,3 +40,7 @@ def play(word, lives):
     blanks = list(blanks)
     guessed = []
     incorrect = 7
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 4b7905ff7e4cb1af224b05fdd391f4560d9fd978
